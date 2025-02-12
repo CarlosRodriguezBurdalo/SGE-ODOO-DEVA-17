@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="crb_alquiler_vehiculos.list">
+      <field name="name">CrbAlquilerVehiculos list</field>
+      <field name="model">crb_alquiler_vehiculos.crb_alquiler_vehiculos</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="crb_alquiler_vehiculos.action_window">
+      <field name="name">CrbAlquilerVehiculos window</field>
+      <field name="res_model">crb_alquiler_vehiculos.crb_alquiler_vehiculos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="crb_alquiler_vehiculos.action_server">
+      <field name="name">CrbAlquilerVehiculos server</field>
+      <field name="model_id" ref="model_crb_alquiler_vehiculos_crb_alquiler_vehiculos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="CrbAlquilerVehiculos" id="crb_alquiler_vehiculos.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="crb_alquiler_vehiculos.menu_1" parent="crb_alquiler_vehiculos.menu_root"/>
+    <menuitem name="Menu 2" id="crb_alquiler_vehiculos.menu_2" parent="crb_alquiler_vehiculos.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="crb_alquiler_vehiculos.menu_1_list" parent="crb_alquiler_vehiculos.menu_1"
+              action="crb_alquiler_vehiculos.action_window"/>
+    <menuitem name="Server to list" id="crb_alquiler_vehiculos" parent="crb_alquiler_vehiculos.menu_2"
+              action="crb_alquiler_vehiculos.action_server"/>
+-->
+  </data>
+</odoo>
